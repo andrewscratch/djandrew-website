@@ -35,11 +35,12 @@ const AboutImage = styled.img`
   margin-bottom: 20px; /* Added margin for spacing */
 
   @media (min-width: ${breakpoints.tablet}) {
-    max-width: 30%;
-    margin-bottom: 0;
+    max-width: 45%;
   }
 `;
-
+const AboutTitle = styled.p`
+  font-size: 35px;
+`;
 const AboutContent = styled.div`
   width: 100%; /* Full width for smaller screens */
 
@@ -115,6 +116,7 @@ export const AboutSection = () => {
             <FaTelegram style={{ fontSize: "24px" }} />
           </a>
         </SocialLinks>
+        <AboutTitle>DJ ANDREW</AboutTitle>
         <AboutText>
           <p className="paragraph">
             Dj Andrew is a seasoned Hip-Hop/R'n'B DJ, though his sets often
