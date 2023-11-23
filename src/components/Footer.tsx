@@ -118,16 +118,16 @@ const Footer = () => {
         </a>
       </SocialMedia>
       <NavLinks>
-        <Link to="about" smooth={true} duration={500}>
+        <Link to="about" smooth={true} duration={900}>
           About
         </Link>
-        <Link to="mixes" smooth={true} duration={500}>
+        <Link to="mixes" smooth={true} duration={800}>
           Mixes
         </Link>
-        <Link to="photo" smooth={true} duration={500}>
+        <Link to="photo" smooth={true} duration={700}>
           Photos
         </Link>
-        <Link to="video" smooth={true} duration={500}>
+        <Link to="video" smooth={true} duration={700}>
           Video
         </Link>
       </NavLinks>

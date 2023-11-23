@@ -8,7 +8,6 @@ import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram";
 
-// Media query breakpoints
 const breakpoints = {
   tablet: "768px",
   mobile: "480px",
@@ -69,19 +68,16 @@ const AboutText = styled.p`
 `;
 
 export const AboutSection = () => {
-  // Стан для відслідковування поточного зображення та індексу
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [aboutImage, aboutImage1, aboutImage2];
 
   useEffect(() => {
-    // Запускаємо інтервал для зміни зображення кожні 5 секунд
     const interval = setInterval(() => {
       setCurrentImageIndex(
         (currentIndex) => (currentIndex + 1) % images.length
       );
-    }, 5000); // 5000 мілісекунд (5 секунд)
+    }, 5000);
 
-    // Очищаємо інтервал при розмонтовуванні компонента
     return () => clearInterval(interval);
   }, []);
 

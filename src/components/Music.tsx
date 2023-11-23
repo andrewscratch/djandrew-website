@@ -26,7 +26,6 @@ const MixcloudPlayer = styled.iframe`
   border: 0;
 `;
 
-// Компонент Music
 export const Music = () => {
   return (
     <MusicSectionContainer id="mixes">

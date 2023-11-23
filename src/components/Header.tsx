@@ -139,22 +139,22 @@ const Header: React.FC = () => {
       <Nav>
         <ul>
           <li>
-            <Link to="about" smooth={true} duration={500}>
+            <Link to="about" smooth={true} duration={700}>
               About
             </Link>
           </li>
           <li>
-            <Link to="mixes" smooth={true} duration={500}>
+            <Link to="mixes" smooth={true} duration={800}>
               Mixes
             </Link>
           </li>
           <li>
-            <Link to="video" smooth={true} duration={500}>
+            <Link to="video" smooth={true} duration={900}>
               Videos
             </Link>
           </li>
           <li>
-            <Link to="photo" smooth={true} duration={500}>
+            <Link to="photo" smooth={true} duration={1000}>
               Photos
             </Link>
           </li>

@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import heroImage from "../assets/images/hero_bg.jpg";
 
-// Media query breakpoints
 const breakpoints = {
   tablet: "768px",
   mobile: "480px",

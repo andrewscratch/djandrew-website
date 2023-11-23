@@ -122,10 +122,8 @@ const Photos: React.FC = () => {
   };
 
   useEffect(() => {
-    // Цей код виконуватиметься при розмонтовуванні компонента
-
     return () => {
-      document.body.style.overflow = "visible"; // Відновити скролінг
+      document.body.style.overflow = "visible";
     };
   }, []);
 
