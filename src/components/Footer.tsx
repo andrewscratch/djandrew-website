@@ -132,7 +132,7 @@ const Footer = () => {
         </Link>
       </NavLinks>
       <BottomInfo>
-        <div>Power by: Denys Puccini</div>
+        <div>Design by: Denys Puccini</div>
         <div>© Copyright 2023</div>
       </BottomInfo>
     </FooterContainer>

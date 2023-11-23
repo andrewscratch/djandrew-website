@@ -32,7 +32,7 @@ const AboutSectionContainer = styled.section`
 `;
 
 const AboutImage = styled.img`
-  max-width: 80%; /* Increased max-width for smaller screens */
+  max-width: 100%; /* Increased max-width for smaller screens */
   margin-bottom: 20px; /* Added margin for spacing */
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -65,7 +65,7 @@ const SocialLinks = styled.div`
 
 const AboutText = styled.p`
   line-height: 1.6;
-  text-align: left;
+  text-align: justify;
 `;
 
 export const AboutSection = () => {
@@ -120,26 +120,32 @@ export const AboutSection = () => {
           </a>
         </SocialLinks>
         <AboutText>
-          Dj Andrew is a seasoned Hip-Hop/R'n'B DJ, though his sets often
-          showcase a diverse range of musical styles. With over two decades of
-          experience in the industry, he is celebrated for his unique style,
-          exceptional scratch skills, and an innate ability to connect with his
-          audience through his music. Andrew embarked on his musical journey in
-          2001, quickly rising to prominence as one of Ukraine's premier
-          Hip-Hop/R'n'B DJs. His talent and dedication earned him recognition in
-          various championships, where he secured victory in several
-          competitions. Notably, Andrew took the initiative to organize the
-          Ukrainian Scratch Championship, garnering support from renowned DJs
-          such as dj Rafik and Q-bert, among others. This event showcased his
-          commitment to advancing the art of DJing in Ukraine. A significant
-          chapter in Andrew's career includes his role as a DJ in music bands
-          like VovaZiLvova, D'lemma, and the well-known Ukrainian band TNMK,
-          where he contributed his skills for over eight years. In addition to
-          his DJing endeavors, Andrew has established his own Dj Academy, which
-          operates in Kyiv, Limassol, and online, reaching students worldwide.
-          This academy serves as a hub for highly qualified DJs and producers to
-          share their knowledge and expertise with aspiring talents, fostering
-          growth and innovation in the music industry.
+          <p className="paragraph">
+            Dj Andrew is a seasoned Hip-Hop/R'n'B DJ, though his sets often
+            showcase a diverse range of musical styles. With over two decades of
+            experience in the industry, he is celebrated for his unique style,
+            exceptional scratch skills, and an innate ability to connect with
+            his audience through his music. Andrew embarked on his musical
+            journey in 2001, quickly rising to prominence as one of Ukraine's
+            premier Hip-Hop/R'n'B DJs.
+          </p>
+          His talent and dedication earned him recognition in various
+          championships, where he secured victory in several competitions.
+          Notably, Andrew took the initiative to organize the Ukrainian Scratch
+          Championship, garnering support from renowned DJs such as dj Rafik and
+          Q-bert, among others. This event showcased his commitment to advancing
+          the art of DJing in Ukraine.
+          <p className="paragraph">
+            A significant chapter in Andrew's career includes his role as a DJ
+            in music bands like VovaZiLvova, D'lemma, and the well-known
+            Ukrainian band TNMK, where he contributed his skills for over eight
+            years. In addition to his DJing endeavors, Andrew has established
+            his own Dj Academy, which operates in Kyiv, Limassol, and online,
+            reaching students worldwide. This academy serves as a hub for highly
+            qualified DJs and producers to share their knowledge and expertise
+            with aspiring talents, fostering growth and innovation in the music
+            industry.
+          </p>
         </AboutText>
       </AboutContent>
     </AboutSectionContainer>
