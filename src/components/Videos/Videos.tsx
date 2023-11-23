@@ -33,7 +33,7 @@ const StyledVideoContainer = styled.div`
   height: auto; // Adjusted height for responsiveness
   @media (min-width: ${breakpoints.tablet}) {
     margin-left: 15%; // Original margin for larger screens
-    height: 500px; // Original fixed height for larger screens
+    height: 320px; // Original fixed height for larger screens
   }
   @media (max-width: ${breakpoints.mobile}) {
     margin-left: 15%;
