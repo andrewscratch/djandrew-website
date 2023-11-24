@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import heroImage from "../assets/images/hero_bg.jpg";
+import heroImage from "../assets/images/hero_bg_s.jpg";
 
 const breakpoints = {
   tablet: "48rem",
