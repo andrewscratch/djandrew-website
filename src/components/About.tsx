@@ -9,56 +9,56 @@ import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram";
 
 const breakpoints = {
-  tablet: "768px",
-  mobile: "480px",
+  tablet: "48rem",
+  mobile: "30rem",
 };
 
 const AboutSectionContainer = styled.section`
   background-color: black;
   color: white;
   display: flex;
-  flex-direction: column; /* Changed to column for mobile-first approach */
-  padding: 20px; /* Reduced padding for smaller screens */
+  flex-direction: column;
+  padding: 1.25rem;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
 
   @media (min-width: ${breakpoints.tablet}) {
-    flex-direction: row; /* Row layout for tablet and above */
-    padding: 50px; /* Increased padding for larger screens */
+    flex-direction: row;
+    padding: 5rem;
     justify-content: space-between;
   }
 `;
 
 const AboutImage = styled.img`
-  max-width: 100%; /* Increased max-width for smaller screens */
-  margin-bottom: 20px; /* Added margin for spacing */
+  max-width: 100%;
+  margin-bottom: 1.25rem;
 
   @media (min-width: ${breakpoints.tablet}) {
     max-width: 45%;
   }
 `;
 const AboutTitle = styled.p`
-  font-size: 35px;
+  font-size: 2.5rem;
 `;
 const AboutContent = styled.div`
-  width: 100%; /* Full width for smaller screens */
+  width: 100%;
 
   @media (min-width: ${breakpoints.tablet}) {
-    width: 50%; /* Reduced width for larger screens */
+    width: 50%;
   }
 `;
 
 const SocialLinks = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   a {
     color: white;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     text-decoration: none;
     &:hover {
       color: #ff6347;
       transform: scale(1.1);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
     }
   }
 `;
@@ -92,28 +92,28 @@ export const AboutSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebookF style={{ fontSize: "24px" }} />
+            <FaFacebookF style={{ fontSize: "1.5rem" }} />
           </a>
           <a
             href="https://www.youtube.com/channel/UC3egG_47IjJiyqgWPcKDMxw"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaYoutube style={{ fontSize: "24px" }} />
+            <FaYoutube style={{ fontSize: "1.5rem" }} />
           </a>
           <a
             href="https://instagram.com/andrewscratch"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram style={{ fontSize: "24px" }} />
+            <FaInstagram style={{ fontSize: "1.5rem" }} />
           </a>
           <a
             href="https://t.me/andrewscratch"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTelegram style={{ fontSize: "24px" }} />
+            <FaTelegram style={{ fontSize: "1.5rem" }} />
           </a>
         </SocialLinks>
         <AboutTitle>DJ ANDREW</AboutTitle>

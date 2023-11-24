@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 import heroImage from "../assets/images/hero_bg.jpg";
 
 const breakpoints = {
-  tablet: "768px",
-  mobile: "480px",
+  tablet: "48rem",
+  mobile: "30rem",
 };
 
 const HeroContainer = styled.div`
@@ -26,21 +26,21 @@ const HeroContainer = styled.div`
 const TitleWrapper = styled.div`
   flex: 1;
   text-align: left;
-  padding: 10px; /* Added padding for smaller screens */
+  padding: 0.625rem;
 `;
 
 const SubtitleWrapper = styled.div`
   flex: 1;
   text-align: right;
-  padding: 10px; /* Added padding for smaller screens */
+  padding: 0.625rem;
 `;
 
 const Subtitle = styled.h2`
-  font-size: 19px;
-  margin-right: 80px;
+  font-size: 1.1875rem;
+  margin-right: 5rem;
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin-right: 20px; /* Reduced margin for tablet and smaller screens */
+    margin-right: 1.25rem;
   }
 `;
 
@@ -61,7 +61,7 @@ const DJText = styled.div`
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 116px;
+  font-size: 7.25rem;
   transition: color 0.3s ease;
 
   &:hover {
@@ -70,12 +70,12 @@ const DJText = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    font-size: 60px; /* Reduced font size for tablet and smaller screens */
+    font-size: 3.75rem;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     top: 60%;
-    font-size: 60px; /* Further reduced font size for mobile screens */
+    font-size: 3.75rem;
   }
 `;
 

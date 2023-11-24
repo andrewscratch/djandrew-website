@@ -8,22 +8,22 @@ import {
 import { Link } from "react-scroll";
 
 const breakpoints = {
-  mobile: "768px",
+  mobile: "48rem", // Встановлюємо ширину в rem
 };
 
 const FooterContainer = styled.footer`
   background-color: #000; // Black color
   color: #fff;
-  padding: 20px 0; // Reduced padding for smaller screens
+  padding: 1.25rem 0;
   display: flex;
-  flex-direction: column; // Stack elements vertically on mobile
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   @media (min-width: ${breakpoints.mobile}) {
-    flex-direction: row; // Original row layout for larger screens
+    flex-direction: row;
     justify-content: space-around;
-    padding: 60px 0;
+    padding: 3.75rem 0;
   }
 `;
 
@@ -32,42 +32,42 @@ const SocialMedia = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin-bottom: 30px; // Reduced margin for smaller screens
+  margin-bottom: 1.875rem;
   & > * {
-    margin-right: 15px;
-    font-size: 24px;
+    margin-right: 0.9375rem;
+    font-size: 1.5rem;
     color: #fff;
     &:hover {
       color: #ff6347;
       transform: scale(1.1);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
     }
   }
   @media (min-width: ${breakpoints.mobile}) {
-    margin-bottom: 40px; // Original margin for larger screens
+    margin-bottom: 2.5rem;
   }
 `;
 
 const NavLinks = styled.nav`
   display: flex;
-  flex-direction: column; // Stack links vertically on mobile
+  flex-direction: column;
   align-items: center;
   flex: 1;
-  margin-bottom: 30px; // Reduced margin for smaller screens
+  margin-bottom: 1.875rem;
   a {
     color: #fff;
     text-decoration: none;
-    padding: 8px;
+    padding: 0.46875rem;
     &:hover {
       color: #ff6347;
       text-decoration: underline;
       transform: scale(1.1);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
     }
   }
   @media (min-width: ${breakpoints.mobile}) {
-    flex-direction: row; // Original horizontal layout for larger screens
-    margin-bottom: 40px; // Original margin for larger screens
+    flex-direction: row;
+    margin-bottom: 2.5rem;
   }
 `;
 
@@ -78,9 +78,9 @@ const BottomInfo = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px; // Reduced margin for smaller screens
+  margin-bottom: 1.875rem;
   @media (min-width: ${breakpoints.mobile}) {
-    margin-bottom: 40px; // Original margin for larger screens
+    margin-bottom: 2.5rem;
   }
 `;
 

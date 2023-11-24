@@ -8,21 +8,18 @@ import ReactPlayer from "react-player";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
 
-// Media query breakpoints
 const breakpoints = {
-  tablet: "768px",
-  mobile: "480px",
+  tablet: "48rem",
+  mobile: "30rem",
 };
 
 const StyledContainer = styled.div`
   background-color: #000;
-  padding: 20px; // Reduced padding for smaller screens
+  padding: 1.25rem;
+
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 80px; // Original padding for larger screens
+    padding: 5rem;
   }
-  // @media (min-width: ${breakpoints.mobile}) {
-  //   margin: 30px;
-  // }
 `;
 
 const StyledVideoContainer = styled.div`
@@ -30,35 +27,41 @@ const StyledVideoContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto; // Adjusted height for responsiveness
+
   @media (min-width: ${breakpoints.tablet}) {
-    margin-left: 15%; // Original margin for larger screens
-    height: 320px; // Original fixed height for larger screens
+    margin-left: 15%;
+    height: 18rem;
   }
+
   @media (max-width: ${breakpoints.mobile}) {
     margin-left: 15%;
-    height: 210px;
-    width: 350px;
+    height: 15rem;
+    width: 35rem;
+  }
+
+  @media (min-width: 64rem) {
+    height: 42rem;
   }
 `;
 
 const Title = styled.h2`
   font-family: DM Sans;
-  font-size: 24px; // Reduced font size for smaller screens
+  font-size: 1.5rem;
   color: #fff;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 40px; // Original font size for larger screens
+    font-size: 2.5rem;
   }
 `;
+
 const Videos = () => {
   const videoIds = [
     "FpSIHQUIQ-w",
     "te0YruVRJIo",
     "vJ2JD1nvlss",
     "iY12xWWKbHE",
-    // ... other video IDs
+    // ... інші ID відео
   ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -87,8 +90,8 @@ const Videos = () => {
             {index === currentVideoIndex && (
               <ReactPlayer
                 url={`https://www.youtube.com/watch?v=${id}`}
-                width="70%" // Зменшуємо ширину відео на 80%
-                height="80%" // Зменшуємо висоту відео на 60%
+                width="70%"
+                height="80%"
                 controls
               />
             )}

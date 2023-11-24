@@ -15,7 +15,7 @@ const HeaderContainer = styled.div`
   padding: 1rem;
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 30px;
   right: 10px;
   z-index: 10;
 `;
