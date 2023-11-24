@@ -1,28 +1,28 @@
 import styled from "styled-components";
 
 const MusicSectionContainer = styled.section`
-  padding: 50px;
-  background-color: #f0f0f0; // Світлий фон для контрасту
+  padding: 2.5rem;
+  background-color: #f0f0f0;
 `;
 
 const MusicTitle = styled.h2`
   font-family: DM Sans;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #000000;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 `;
 
 const IframeContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 `;
 
 const MixcloudPlayer = styled.iframe`
   width: 100%;
-  height: 120px;
+  height: 7.5rem;
   border: 0;
 `;
 
