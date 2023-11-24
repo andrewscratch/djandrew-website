@@ -114,7 +114,7 @@ const CloseIcon = styled.svg`
 const CloseButton = styled.div`
   position: absolute;
   top: 20px;
-  right: 20px;
+  left: 20px;
   // Add or modify styles as needed
 `;
 
