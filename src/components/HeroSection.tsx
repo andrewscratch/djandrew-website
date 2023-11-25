@@ -65,7 +65,7 @@ const DJText = styled.div`
 const HeroSection = () => {
   return (
     <HeroContainer>
-      <VideoBackground autoPlay muted>
+      <VideoBackground autoPlay muted playsInline>
         <source src={heroVideo} type="video/mp4" />
       </VideoBackground>
       <DJText>DJ ANDREW</DJText>
