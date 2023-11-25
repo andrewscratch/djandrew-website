@@ -41,7 +41,7 @@ const Title = styled.h2`
 
   font-family: "DM Sans", sans-serif;
 
-  font-size: 40px;
+  font-size: 2.5rem;
 
   text-align: center;
 

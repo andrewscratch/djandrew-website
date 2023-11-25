@@ -46,7 +46,7 @@ const StyledVideoContainer = styled.div`
 
 const Title = styled.h2`
   font-family: DM Sans;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #fff;
   text-align: center;
   margin-bottom: 1.25rem;
