@@ -18,6 +18,12 @@ import fifth from "../assets/images/fifth.jpg";
 
 import sixth from "../assets/images/six.jpg";
 
+import seven from "../assets/images/seven.jpg";
+
+import eight from "../assets/images/eight.jpg";
+
+import nine from "../assets/images/nine.jpg";
+
 const breakpoints = {
   tablet: "768px",
 
@@ -111,7 +117,17 @@ const Photos: React.FC = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const images = [first, second, third, fourth, fifth, sixth];
+  const images = [
+    first,
+    second,
+    third,
+    fourth,
+    fifth,
+    sixth,
+    seven,
+    eight,
+    nine,
+  ];
 
   const openModal = (img: string) => {
     setModalImage(img);
