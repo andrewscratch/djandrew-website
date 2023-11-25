@@ -21,6 +21,7 @@ const HeaderContainer = styled.div`
 `;
 
 const Nav = styled.nav`
+  margin-left: 2rem;
   @media (max-width: ${breakpoints.mobile}) {
     display: none;
   }
