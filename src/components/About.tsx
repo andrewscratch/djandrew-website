@@ -32,10 +32,12 @@ const AboutSectionContainer = styled.section`
 
 const AboutImage = styled.img`
   max-width: 100%;
+  height: auto;
   margin-bottom: 1.25rem;
 
   @media (min-width: ${breakpoints.tablet}) {
     max-width: 45%;
+    height: 100%;
   }
 `;
 const AboutTitle = styled.p`

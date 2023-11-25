@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import heroImage from "../assets/images/hero_bg_s.jpg";
+
+import heroVideo from "../assets/ videos/hero_bg.mp4";
 
 const breakpoints = {
   tablet: "48rem",
@@ -9,39 +10,21 @@ const breakpoints = {
 const HeroContainer = styled.div`
   width: 100%;
   height: 100vh;
-  background-image: url(${heroImage});
-
-  background-position: center;
-  background-size: cover;
-
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
   color: white;
 `;
 
-const TitleWrapper = styled.div`
-  flex: 1;
-  text-align: left;
-  padding: 0.625rem;
-`;
-
-const SubtitleWrapper = styled.div`
-  flex: 1;
-  text-align: right;
-  padding: 0.625rem;
-`;
-
-const Subtitle = styled.h2`
-  font-size: 1.1875rem;
-  margin-right: 5rem;
-
-  @media (max-width: ${breakpoints.tablet}) {
-    margin-right: 1.25rem;
-  }
+const VideoBackground = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 `;
 
 const pulse = keyframes`
@@ -79,14 +62,12 @@ const DJText = styled.div`
   }
 `;
 
-export const HeroSection: React.FC = () => {
+const HeroSection = () => {
   return (
     <HeroContainer>
-      <TitleWrapper></TitleWrapper>
-      <SubtitleWrapper>
-        <Subtitle></Subtitle>
-      </SubtitleWrapper>
-
+      <VideoBackground autoPlay muted>
+        <source src={heroVideo} type="video/mp4" />
+      </VideoBackground>
       <DJText>DJ ANDREW</DJText>
     </HeroContainer>
   );
