@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MusicSectionContainer = styled.section`
-  padding: 2.5rem;
+  padding: 3rem;
   background-color: #f0f0f0;
 `;
 

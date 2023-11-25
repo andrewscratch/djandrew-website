@@ -33,7 +33,7 @@ const breakpoints = {
 const StyledContainer = styled.div`
   background-color: #f0f0f0;
 
-  padding: 30px;
+  padding: 5rem;
 `;
 
 const Title = styled.h2`
