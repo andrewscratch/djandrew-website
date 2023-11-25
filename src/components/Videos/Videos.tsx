@@ -41,7 +41,8 @@ const StyledVideoContainer = styled.div`
 
   @media (orientation: landscape) {
     margin-left: 15%;
-    height: auto;
+    padding-bottom: 2rem;
+    height: 20rem;
     width: 100%;
   }
 
