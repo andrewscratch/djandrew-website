@@ -50,14 +50,15 @@
 
 .video-container {
   align-items: center;
-  margin-top: 20px; /* Adjust top margin as needed */
-  margin-bottom: 20px; /* Adjust bottom margin as needed */
+  margin-top: 20px;
+  margin-bottom: 20px;
   object-fit: cover;
 }
 
 .custom-arrow-next,
 .custom-arrow-prev {
   background: rgb(19, 18, 18);
+  cursor: pointer;
 }
 
 .video-slide-container {
