@@ -18,7 +18,6 @@
     "lightgallery": "^2.7.2",
     "photoswipe": "^5.4.2",
     "react": "^18.2.0",
-    "react-animated-text-content": "^1.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-lazy-load": "^4.0.1",
