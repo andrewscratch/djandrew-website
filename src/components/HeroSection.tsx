@@ -53,7 +53,7 @@ const DJText = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
   }
 
   @media (max-width: ${breakpoints.mobile}) {

@@ -4,9 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
-
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
+import AnimatedText from "react-animated-text-content";
+
+import backgroundImg from "../../assets/images/backdrop.jpg"; // Import your background image here
 
 const breakpoints = {
   tablet: "48rem",
@@ -14,7 +16,11 @@ const breakpoints = {
 };
 
 const StyledContainer = styled.div`
+  // background-image: url(${backgroundImg});
   background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 1.25rem;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -68,7 +74,7 @@ const Videos = () => {
     "te0YruVRJIo",
     "vJ2JD1nvlss",
     "iY12xWWKbHE",
-    // ... інші ID відео
+    // ... add other video IDs here
   ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -83,14 +89,32 @@ const Videos = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (_: any, next: number) => {
-      setCurrentVideoIndex(next);
-    },
+    beforeChange: (_: number, next: number) => setCurrentVideoIndex(next),
   };
 
   return (
     <StyledContainer id="video">
-      <Title>Videos</Title>
+      <Title>
+        <AnimatedText
+          type="words"
+          animation={{
+            x: "200px",
+            y: "-20px",
+            scale: 1.1,
+            ease: "ease-in-out",
+          }}
+          animationType="float"
+          interval={0.06}
+          duration={0.8}
+          tag="p"
+          className="animated-paragraph"
+          includeWhiteSpaces
+          threshold={0.1}
+          rootMargin="20%"
+        >
+          Videos
+        </AnimatedText>
+      </Title>
       <Slider {...settings}>
         {videoIds.map((id, index) => (
           <StyledVideoContainer key={id}>

@@ -132,8 +132,17 @@ const Footer = () => {
         </Link>
       </NavLinks>
       <BottomInfo>
-        <div>Design by: Denys Puccini</div>
-        <div>© Copyright 2023</div>
+        {/* <div>Design by: Denys Puccini</div> */}
+        <div>© Copyright 2025</div>
+        <div>
+          Email:{" "}
+          <a
+            href="mailto:andrew.chudlya@gmail.com"
+            style={{ color: "#fff", textDecoration: "none" }}
+          >
+            andrew.chudlya@gmail.com
+          </a>
+        </div>
       </BottomInfo>
     </FooterContainer>
   );
