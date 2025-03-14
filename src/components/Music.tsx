@@ -29,14 +29,21 @@ const MixcloudPlayer = styled.iframe`
 export const Music = () => {
   return (
     <MusicSectionContainer id="mixes">
-      <MusicTitle>Mixes</MusicTitle>
+      <MusicTitle>Mixes &</MusicTitle>
 
       <IframeContainer>
-        <MixcloudPlayer src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fandrewscratch%2Fdj-andrew-grab-this-mix%2F"></MixcloudPlayer>
+        <iframe
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2054300728&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
       </IframeContainer>
 
       <IframeContainer>
-        <MixcloudPlayer src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fandrewscratch%2Fdj-andrew-live-play-tv-10317%2F"></MixcloudPlayer>
+        <MixcloudPlayer src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fandrewscratch%2Fdj-andrew-grab-this-mix%2F"></MixcloudPlayer>
       </IframeContainer>
 
       <IframeContainer>
