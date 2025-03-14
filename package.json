@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
     "@react-icons/all-files": "^4.1.0",
-    "@testing-library/react": "^16.2.0",
+    "@testing-library/react": "^13.0.0",
     "lg-video": "^1.4.0",
     "lightgallery": "^2.7.2",
     "photoswipe": "^5.4.2",
