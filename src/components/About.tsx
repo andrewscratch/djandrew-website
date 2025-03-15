@@ -3,10 +3,13 @@ import styled from "styled-components";
 import aboutImage from "../assets/images/about.jpeg";
 import aboutImage1 from "../assets/images/about1.jpg";
 import aboutImage2 from "../assets/images/about2.jpg";
-import { FaYoutube } from "@react-icons/all-files/fa/FaYoutube";
-import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
-import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
-import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram";
+import {
+  FaYoutube,
+  FaFacebookF,
+  FaInstagram,
+  FaTelegram,
+} from "react-icons/fa";
+import backgroundImg from "/src/assets/images/backdrop.jpg";
 
 const breakpoints = {
   tablet: "48rem",
@@ -14,7 +17,7 @@ const breakpoints = {
 };
 
 const AboutSectionContainer = styled.section`
-  background-color: black;
+  background: url(${backgroundImg}) no-repeat center center/cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -40,9 +43,11 @@ const AboutImage = styled.img`
     height: 100%;
   }
 `;
+
 const AboutTitle = styled.p`
   font-size: 2.5rem;
 `;
+
 const AboutContent = styled.div`
   width: 100%;
 
@@ -80,7 +85,6 @@ export const AboutSection = () => {
         (currentIndex) => (currentIndex + 1) % images.length
       );
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -120,7 +124,7 @@ export const AboutSection = () => {
         </SocialLinks>
         <AboutTitle>DJ ANDREW</AboutTitle>
         <AboutText>
-          <p className="paragraph">
+          <p>
             Dj Andrew is a seasoned Hip-Hop/R'n'B DJ, though his sets often
             showcase a diverse range of musical styles. With over two decades of
             experience in the industry, he is celebrated for his unique style,
@@ -129,18 +133,20 @@ export const AboutSection = () => {
             journey in 2001, quickly rising to prominence as one of Ukraine's
             premier Hip-Hop/R'n'B DJs.
           </p>
-          His talent and dedication earned him recognition in various
-          championships, where he secured victory in several competitions.
-          Notably, Andrew took the initiative to organize the Ukrainian Scratch
-          Championship, garnering support from renowned DJs such as dj Rafik and
-          Q-bert, among others. This event showcased his commitment to advancing
-          the art of DJing in Ukraine.
-          <p className="paragraph">
+          <p>
+            His talent and dedication earned him recognition in various
+            championships, where he secured victory in several competitions.
+            Notably, Andrew took the initiative to organize the Ukrainian
+            Scratch Championship, garnering support from renowned DJs such as DJ
+            Rafik and Q-bert, among others. This event showcased his commitment
+            to advancing the art of DJing in Ukraine.
+          </p>
+          <p>
             A significant chapter in Andrew's career includes his role as a DJ
             in music bands like VovaZiLvova, D'lemma, and the well-known
             Ukrainian band TNMK, where he contributed his skills for over eight
             years. In addition to his DJing endeavors, Andrew has established
-            his own Dj Academy, which operates in Kyiv, Limassol, and online,
+            his own DJ Academy, which operates in Kyiv, Limassol, and online,
             reaching students worldwide. This academy serves as a hub for highly
             qualified DJs and producers to share their knowledge and expertise
             with aspiring talents, fostering growth and innovation in the music

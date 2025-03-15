@@ -6,13 +6,18 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 import { Link } from "react-scroll";
+import backgroundImg from "/src/assets/images/backdrop.jpg";
 
 const breakpoints = {
-  mobile: "48rem", // Встановлюємо ширину в rem
+  mobile: "48rem",
 };
 
 const FooterContainer = styled.footer`
-  background-color: #000; // Black color
+  background-color: #000;
+  background-image: url(${backgroundImg}); // Устанавливаем фоновое изображение
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 1.25rem 0;
   display: flex;
@@ -20,6 +25,7 @@ const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
   @media (min-width: ${breakpoints.mobile}) {
     flex-direction: row;
     justify-content: space-around;
@@ -33,16 +39,19 @@ const SocialMedia = styled.div`
   align-items: center;
   flex: 1;
   margin-bottom: 1.875rem;
+
   & > * {
     margin-right: 0.9375rem;
     font-size: 1.5rem;
     color: #fff;
+
     &:hover {
       color: #ff6347;
       transform: scale(1.1);
       text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
     }
   }
+
   @media (min-width: ${breakpoints.mobile}) {
     margin-bottom: 2.5rem;
   }
@@ -54,10 +63,12 @@ const NavLinks = styled.nav`
   align-items: center;
   flex: 1;
   margin-bottom: 1.875rem;
+
   a {
     color: #fff;
     text-decoration: none;
     padding: 0.46875rem;
+
     &:hover {
       color: #ff6347;
       text-decoration: underline;
@@ -65,6 +76,7 @@ const NavLinks = styled.nav`
       text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
     }
   }
+
   @media (min-width: ${breakpoints.mobile}) {
     flex-direction: row;
     margin-bottom: 2.5rem;
@@ -79,6 +91,7 @@ const BottomInfo = styled.div`
   align-items: center;
   text-align: center;
   margin-bottom: 1.875rem;
+
   @media (min-width: ${breakpoints.mobile}) {
     margin-bottom: 2.5rem;
   }
@@ -132,7 +145,6 @@ const Footer = () => {
         </Link>
       </NavLinks>
       <BottomInfo>
-        {/* <div>Design by: Denys Puccini</div> */}
         <div>© Copyright 2025</div>
         <div>
           Email:{" "}
