@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +6,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
-import AnimatedText from "react-animated-text-content";
+import TextTransition, { presets } from "react-text-transition";
 
 import backgroundImg from "../../assets/images/backdrop.jpg"; // Import your background image here
 
@@ -16,8 +16,8 @@ const breakpoints = {
 };
 
 const StyledContainer = styled.div`
-  // background-image: url(${backgroundImg});
   background-color: #000;
+  background-image: url(${backgroundImg}); // Set the background image here
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,6 +63,7 @@ const Title = styled.h2`
   color: #fff;
   text-align: center;
   margin-bottom: 1.25rem;
+
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 2.5rem;
   }
@@ -78,6 +79,15 @@ const Videos = () => {
   ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(0);
+  const titles = ["Videos", "Latest Uploads", "Watch Now"];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTextIndex((index) => (index + 1) % titles.length);
+    }, 3000);
+    return () => clearInterval(intervalId);
+  }, []);
 
   const settings = {
     dots: false,
@@ -95,25 +105,9 @@ const Videos = () => {
   return (
     <StyledContainer id="video">
       <Title>
-        <AnimatedText
-          type="words"
-          animation={{
-            x: "200px",
-            y: "-20px",
-            scale: 1.1,
-            ease: "ease-in-out",
-          }}
-          animationType="float"
-          interval={0.06}
-          duration={0.8}
-          tag="p"
-          className="animated-paragraph"
-          includeWhiteSpaces
-          threshold={0.1}
-          rootMargin="20%"
-        >
-          Videos
-        </AnimatedText>
+        <TextTransition springConfig={presets.wobbly}>
+          {titles[textIndex]}
+        </TextTransition>
       </Title>
       <Slider {...settings}>
         {videoIds.map((id, index) => (

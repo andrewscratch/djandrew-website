@@ -29,7 +29,7 @@ const MixcloudPlayer = styled.iframe`
 export const Music = () => {
   return (
     <MusicSectionContainer id="mixes">
-      <MusicTitle>Mixes &</MusicTitle>
+      <MusicTitle>Mixes & Tracks</MusicTitle>
 
       <IframeContainer>
         <iframe
