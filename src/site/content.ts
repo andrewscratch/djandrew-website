@@ -53,11 +53,10 @@ export const releases = [
 ];
 
 export const mixes = [
+  "https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fandrewscratch%2Fraw-cut%2F",
   "https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fandrewscratch%2Fdj-andrew-grab-this-mix%2F",
   "https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fandrewscratch%2Fdj-andrew-road-to-summer%2F",
 ];
 
-export const soundcloudTrack =
-  "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2054300728&color=%23e0261c&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false";
 
 export const videoIds = ["FpSIHQUIQ-w", "te0YruVRJIo", "vJ2JD1nvlss", "iY12xWWKbHE"];

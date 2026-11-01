@@ -19,7 +19,6 @@ import {
   nextRelease,
   releases,
   mixes,
-  soundcloudTrack,
   videoIds,
 } from "./site/content";
 
@@ -182,7 +181,6 @@ function App() {
                 {mixes.map((m) => (
                   <iframe key={m} className="mix" src={m} title="DJ Andrew mix on Mixcloud" loading="lazy" />
                 ))}
-                <iframe className="mix sc" src={soundcloudTrack} title="Andrew on SoundCloud" loading="lazy" />
               </div>
             </div>
           </div>
