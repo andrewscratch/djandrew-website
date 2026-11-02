@@ -209,8 +209,8 @@ function App() {
               Andrew started DJing in 2001 and became one of Ukraine&rsquo;s leading
               Hip-Hop and R&rsquo;n&rsquo;B DJs. He toured with TNMK for eight years,
               built the Ukrainian Scratch Championship, and founded DJ Academy, which
-              now teaches in Kyiv, Limassol and online. Today he lives in Cyprus and
-              releases UK Garage and Drum &amp; Bass as Andrew Scratch.
+              now teaches in Kyiv, Limassol and online. Today he releases UK Garage and Drum &amp; Bass as Andrew Scratch, plays
+              at events and runs DJ masterclasses.
             </p>
             <details>
               <summary>Read the full bio</summary>
